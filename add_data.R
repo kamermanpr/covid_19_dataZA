@@ -9,7 +9,7 @@
 #           rep('2020-03-13', 9),
 #           rep('2020-03-14', 9))
 # 
-# provinces <- c(rep(c('FS', 
+# provinces <- c(rep(c('FS',
 #                      'EC',
 #                      'GP',
 #                      'KZN',
@@ -19,7 +19,7 @@
 #                      'NC',
 #                      'WC'), 3))
 # 
-# n_cases <- c(c('FS' = 0, 
+# n_cases <- c(c('FS' = 0,
 #                'EC' = 0,
 #                'GP' = 6,
 #                'KZN' = 8,
@@ -27,8 +27,8 @@
 #                'MP' = 1,
 #                'NW' = 0,
 #                'NC' = 0,
-#                'WC' = 1), 
-#              c('FS' = 0, 
+#                'WC' = 1),
+#              c('FS' = 0,
 #                'EC' = 0,
 #                'GP' = 10,
 #                'KZN' = 10,
@@ -36,8 +36,8 @@
 #                'MP' = 1,
 #                'NW' = 0,
 #                'NC' = 0,
-#                'WC' = 3), 
-#              c('FS' = 0, 
+#                'WC' = 3),
+#              c('FS' = 0,
 #                'EC' = 0,
 #                'GP' = 17,
 #                'KZN' = 11,
@@ -47,7 +47,7 @@
 #                'NC' = 0,
 #                'WC' = 9))
 # 
-# n_deaths <- c(c('FS' = 0, 
+# n_deaths <- c(c('FS' = 0,
 #                 'EC' = 0,
 #                 'GP' = 0,
 #                 'KZN' = 0,
@@ -56,7 +56,7 @@
 #                 'NW' = 0,
 #                 'NC' = 0,
 #                 'WC' = 0),
-#               c('FS' = 0, 
+#               c('FS' = 0,
 #                 'EC' = 0,
 #                 'GP' = 0,
 #                 'KZN' = 0,
@@ -65,7 +65,7 @@
 #                 'NW' = 0,
 #                 'NC' = 0,
 #                 'WC' = 0),
-#               c('FS' = 0, 
+#               c('FS' = 0,
 #                 'EC' = 0,
 #                 'GP' = 0,
 #                 'KZN' = 0,
@@ -73,7 +73,7 @@
 #                 'MP' = 0,
 #                 'NW' = 0,
 #                 'NC' = 0,
-#                 'WC' = 0)) 
+#                 'WC' = 0))
 # 
 # n_tests <- c(rep(848, 9),
 #              rep(924, 9),
@@ -83,14 +83,14 @@
 #                    provinces = provinces,
 #                    n_tests = n_tests,
 #                    n_cases = n_cases,
-#                    n_deaths = n_deaths) 
+#                    n_deaths = n_deaths)
 # 
 # write.csv(data, file = 'data.csv', row.names = FALSE)
 
 data <- read.csv('data.csv', stringsAsFactors = FALSE)
 
 data <- tibble::add_row(.data = data,
-                        date = rep(Sys.Date() -1, 9),
+                        date = as.character(rep(Sys.Date(), 9)),
                         provinces = c('FS', 
                                       'EC',
                                       'GP',
@@ -100,16 +100,16 @@ data <- tibble::add_row(.data = data,
                                       'NW',
                                       'NC',
                                       'WC'),
-                        n_tests = rep(, 9),
+                        n_tests = rep(1476, 9),
                         n_cases = c('FS' = 0, 
                                     'EC' = 0,
-                                    'GP' = 0,
-                                    'KZN' = 0,
+                                    'GP' = 24,
+                                    'KZN' = 12,
                                     'LP' = 0,
-                                    'MP' = 0,
+                                    'MP' = 1,
                                     'NW' = 0,
                                     'NC' = 0,
-                                    'WC' = 0),
+                                    'WC' = 14),
                         n_deaths = c('FS' = 0, 
                                      'EC' = 0,
                                      'GP' = 0,
