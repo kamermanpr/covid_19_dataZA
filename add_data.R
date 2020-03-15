@@ -3,8 +3,6 @@
 #                  COVID-19 ZA dataframe                   #
 #                                                          #
 ############################################################
-# Load library
-library(tibble)
 
 #-- Historical data from the NICD: 2020-03-11 to 2020-03-14 --#
 date <- c(rep('2020-03-12', 9),
@@ -87,7 +85,7 @@ data <- data.frame(date = date,
                    n_cases = n_cases,
                    n_deaths = n_deaths) 
 
-write.csv(data, file = 'data.csv')
+write.csv(data, file = 'data.csv', row.names = FALSE)
 
 data <- read.csv('data.csv', stringsAsFactors = FALSE)
 
@@ -122,6 +120,6 @@ data <- tibble::add_row(.data = data,
                                      'NC' = 0,
                                      'WC' = 0))
 
-write.csv(data, file = 'data.csv')
+write.csv(data, file = 'data.csv', row.names = FALSE)
 
 
