@@ -117,4 +117,4 @@ date,provinces,n_tests,n_cases,n_deaths,n_recoveries
 2020-03-24,NW,15529,5,0,0
 2020-03-24,NC,15529,2,0,0
 2020-03-24,WC,15529,130,0,0
-2020-03-24,Unknown,15529,0,0,0
+2020-03-24,Unknown,15529,2,0,2
