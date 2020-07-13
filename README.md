@@ -1,10 +1,8 @@
 # COVID-19 data for South Africa
 
-Data obtained from the daily updates provided by the [National Institute for Communicable Diseases](http://www.nicd.ac.za/).
+Data obtained from the daily updates provided by the [National Institute for Communicable Diseases](http://www.nicd.ac.za/). Records start from 2020-03-13, the date when regular updates to the country's COVID-19 stats started to be provided. 
 
-The most up to date file is: _data.csv_. All other _data-yyyy-mm-dd.csv_ files contain the data up to the date specified in the file name.
-
-The data start from 2020-03-13, and each file contains the following columns:
+All data are recorded in the _data.csv_ file, and the file contains the following columns:
 
 - _date_ - date of publication
 
