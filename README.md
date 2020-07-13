@@ -24,3 +24,14 @@ All data are recorded in the _data.csv_ file, and the file contains the followin
 - _n\_deaths_ - cumulative number of deaths for each province.
 
 - _n\_recoveries_ - cumulative number of recoveries for each province.
+
+## LICENSE
+
+<p xmlns:dct="http://purl.org/dc/terms/">
+<a rel="license" href="http://creativecommons.org/publicdomain/mark/1.0/">
+<img src="http://i.creativecommons.org/p/mark/1.0/88x31.png"
+     style="border-style: none;" alt="Public Domain Mark" />
+</a>
+<br />
+This work (<span property="dct:title">covid_19_dataZA</span>), created and identified by <a href="https://www.painblogr.org" rel="dct:publisher"><span property="dct:title">Peter Kamerman</span></a>, is free of known copyright restrictions.
+</p>
