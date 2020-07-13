@@ -33,5 +33,5 @@ All data are recorded in the _data.csv_ file, and the file contains the followin
      style="border-style: none;" alt="Public Domain Mark" />
 </a>
 <br />
-This work (<span property="dct:title">covid_19_dataZA</span>), created and identified by <a href="https://www.painblogr.org" rel="dct:publisher"><span property="dct:title">Peter Kamerman</span></a>, is free of known copyright restrictions.
+This work (<span property="dct:title">covid_19_dataZA</span>, by <a href="https://github.com/kamermanpr/covid_19_dataZA" rel="dct:creator"><span property="dct:title">Peter Kamerman</span></a>) is free of known copyright restrictions.
 </p>
